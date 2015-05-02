@@ -22,6 +22,8 @@ String.prototype.toHHMMSS = function () {
 
     Template.body.events({
       "click .cmd_btn":function(event){
+        console.log(event.target.attributes["data-step"]);
+        
         var d = new Date();
         MainLine.insert({
           text: "button clicked " + d.getHours() +":"+d.getMinutes()+":"+d.getSeconds(),
