@@ -1,5 +1,5 @@
 /*Template.scenesvg.color = function() {
-	return "#50728C";
+  	return "#50728C";
 };
 */
 
