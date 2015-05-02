@@ -26,7 +26,7 @@ String.prototype.toHHMMSS = function () {
 
         var d = new Date();
         MainLine.insert({
-          text: event.target.attributes["data-step"].value + "clicked " + d.getHours() +":"+d.getMinutes()+":"+d.getSeconds(),
+          text: event.target.attributes["data-step"].value + " clicked " + d.getHours() +":"+d.getMinutes()+":"+d.getSeconds(),
           createdAt: new Date()
         });
         return false;
