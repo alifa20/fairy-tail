@@ -4,7 +4,7 @@
 
 <body>
 
-	<div class="command_container">
+	<div id="command_container">
 		<div class="column-left">
 			<div class="left_msg_box overlay">
 				<span>Welcome to the fairy-tale app!</span>
@@ -22,12 +22,17 @@
 			<div class="right_msg_box overlay">
 				<span>Welcome to the fairy-tale app!</span>
 				<input type="button" class="cmd_btn" value="ok" data-step="player2-step2">
-			</div></div>
-			<div class="clear_fix"></div>
+			</div>
 		</div>
-		{{> scenesvg}}
+		<div class="clear_fix">
+		</div>
+	</div>
+	{{> scenesvg}}
 </body>
 
 <template name="main_story">
+	<div>{{text}}</div>
+</template>
+<template name="command_container_template">
 	<div>{{text}}</div>
 </template>

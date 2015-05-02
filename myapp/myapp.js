@@ -4,6 +4,25 @@ if (Meteor.isClient) {
     // This code only runs on the client
     Template.body.helpers({
       main_stories: function () {
+        // var h = document.getElementById("command_container");
+        // var stuck = false;
+        // function getDistance() {
+        //   var topDist = h.offsetTop;
+        //   return topDist;
+        // }
+        // var stickPoint = getDistance();
+
+        // window.onscroll = function(e) {
+        //   var distance = getDistance() - window.pageYOffset;
+        //   var offset = window.pageYOffset;
+        //   if ( (distance <= 0) && !stuck) {
+        //     h.style.position = 'fixed';
+        //     h.style.top = '0px';
+        //     stuck = true;
+        //   } else if (stuck && (offset <= stickPoint)){
+        //     h.style.position = 'static';
+        //     stuck = false;
+        //   }
         return MainLine.find({},{sort: {createdAt:-1}});
       }
     });
@@ -18,7 +37,7 @@ if (Meteor.isClient) {
           createdAt: new Date()
         });
         return false;
-      }
+      },
 
     });
   }

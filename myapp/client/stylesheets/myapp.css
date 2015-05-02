@@ -5,8 +5,9 @@ body{
 	background: #b7bf76;
 	overflow: scroll;	
 }
-.command_container{ 
+#command_container{ 
 }
+
 .column{
 	position: relative;
 	float: left;
