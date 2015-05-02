@@ -5,21 +5,21 @@
 <body>
 
 	<div class="command_container">
-		<div class="left_col column">
-			<div class="left_msg_box">
+		<div class="column-left">
+			<div class="left_msg_box overlay">
 				<span>Welcome to the fairy-tale app!</span>
 				<input type="button" class="cmd_btn" value="ok" data-step="player1-step1">
 			</div>
 		</div>
-		<div class="middle_col column">	
-			<ul>
+		<div class="column-center">	
+			<div class="overlay">
 				{{#each main_stories}}
 				{{> main_story}}
 				{{/each}}
-			</ul>
+			</div>
 		</div>
-		<div class="right_col column">
-			<div class="left_msg_box">
+		<div class="column-right">
+			<div class="right_msg_box overlay">
 				<span>Welcome to the fairy-tale app!</span>
 				<input type="button" class="cmd_btn" value="ok" data-step="player2-step2">
 			</div></div>
@@ -770,5 +770,5 @@
 </body>
 
 <template name="main_story">
-	<li>{{text}}</li>
+	<div>{{text}}</div>
 </template>
