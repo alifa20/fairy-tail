@@ -10,15 +10,20 @@
 				<h2>Player 1 update box</h2>
 				<span>Welcome to the fairy-tale app!</span>
 
-				<input type="button" class="cmd_btn" value="ok" data-step="player1-step1">
+				<input type="button" class="cmd_btn" value="Next" data-step="player1-step1">
 				<input type="button" class="cmd_intro" value="Show intro" data-step="a">
 			</div>
 		</div>
 		<div class="column-center">	
 			<div class="overlay">
+				player1 runnning command:
+				<strong>{{player1_running_command}}</strong>
+				<hr/>
+				
 				{{#each main_stories}}
 				{{> main_story}}
-				{{/each}}
+				{{/each}} 
+				<!-- {{main_stories}} -->
 			</div>
 		</div>
 		<div class="column-right">

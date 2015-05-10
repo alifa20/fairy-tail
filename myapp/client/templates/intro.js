@@ -16,7 +16,7 @@ Template.intro.events({
 	'click .next':function(){
 		var elem = document.querySelectorAll('.sub-container .active')[0];
 		var next = parseInt(elem.getAttribute('data-page')) + 1; 
-		if (next===3) {return;};
+		if (next===4) {return;};
 		var hidden = document.querySelectorAll('.sub-container .slides')[next];
 		elem.classList.add('hidden');
 		hidden.classList.add('active');
