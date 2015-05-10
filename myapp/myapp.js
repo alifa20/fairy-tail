@@ -60,6 +60,16 @@ if (Meteor.isClient) {
       overlay.style.display = 'block';
       return false;
     }
+    if (command==="show-princess") {
+      var overlay = document.getElementsByClassName('container-princess')[0];
+      overlay.style.display = 'block';
+      return false;
+    }
+    if (command==="show-prince") {
+      var overlay = document.getElementsByClassName('container-prince')[0];
+      overlay.style.display = 'block';
+      return false;
+    }
     return false;
   },
   "click .cmd_intro":function(event){
