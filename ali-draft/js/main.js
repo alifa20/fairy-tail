@@ -17,7 +17,7 @@ var MainView = Backbone.View.extend({
 		this.trees = [];
 		this.treeFaces = [];
 		this.s = Snap(document.getElementsByTagName('svg')[0]);
-		
+		debugger;
 		//dot animals
 		dotGroup = this.s.select('#dots');
 		this.dots = dotGroup.selectAll('*');
