@@ -1,0 +1,33 @@
+.overlay-intro{
+    width: 700px;
+    min-height: 500px;
+    background-color: #DACEBA;
+    border: 5px solid black;
+    z-index: 10;
+    position: absolute;
+    top: 45px;
+    left: 170px;
+    
+    /*display: none;*/
+}
+.container{
+    padding: 20px;
+}
+.top-bar{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+}
+.controls{
+    text-align: center;
+}
+.controls span{
+    cursor: pointer;
+}
+.sub-container{
+    padding-top: 10px;
+    margin: 0 auto;
+}
+.hidden{
+    display: none;
+}

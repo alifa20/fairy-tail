@@ -11,6 +11,7 @@
 				<span>Welcome to the fairy-tale app!</span>
 
 				<input type="button" class="cmd_btn" value="ok" data-step="player1-step1">
+				<input type="button" class="cmd_intro" value="Show intro" data-step="a">
 			</div>
 		</div>
 		<div class="column-center">	
@@ -24,12 +25,16 @@
 			<div class="right_msg_box overlay">
 				<h2>Player 2 update box</h2>
 				<span>Welcome to the fairy-tale app!</span>
-				<input type="button" class="cmd_btn" value="ok" data-step="player2-step2">
+				<br />
+				Not Available yet
+				<br />
+				<input type="button" class="cmd_btn" value="ok" data-step="player2-step2" disabled="disabled" >
 			</div>
 		</div>
 		<div class="clear_fix">
 		</div>
 	</div>
+	{{> intro}}
 	{{> scenesvg}}
 	{{player_action}}
 </body>

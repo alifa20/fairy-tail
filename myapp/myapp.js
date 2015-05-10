@@ -45,7 +45,16 @@ Template.body.events({
     });
     return false;
   },
-
+  "click .cmd_intro":function(event){
+    var overlay = document.getElementsByClassName('overlay-intro')[0];
+    overlay.style.display = 'block';
+    return false;
+  },
+  "click .close":function(event){
+    var overlay = document.getElementsByClassName('overlay-intro')[0];
+    overlay.style.display = 'none';
+    return false;
+  }
 });
 }
 
