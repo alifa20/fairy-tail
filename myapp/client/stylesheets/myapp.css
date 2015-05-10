@@ -46,3 +46,8 @@ body{
 .clear_fix{
 	clear: both;
 }
+.main-container{
+	position: absolute;
+	z-index: 3;
+	width: 100%;
+}
