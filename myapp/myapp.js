@@ -61,12 +61,12 @@ if (Meteor.isClient) {
       return false;
     }
     if (command==="show-princess") {
-      var overlay = document.getElementsByClassName('container-princess')[0];
+      var overlay = document.getElementsByClassName('container-princess-sub')[0];
       overlay.style.display = 'block';
       return false;
     }
     if (command==="show-prince") {
-      var overlay = document.getElementsByClassName('container-prince')[0];
+      var overlay = document.getElementsByClassName('container-prince-sub')[0];
       overlay.style.display = 'block';
       return false;
     }
