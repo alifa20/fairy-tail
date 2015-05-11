@@ -64,3 +64,10 @@ body{
 .clear_fix{
 	clear: both;
 }
+.hidden{
+    display: none;
+}
+.transparent{
+	opacity: 0.5;
+}
+
