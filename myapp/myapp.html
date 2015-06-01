@@ -4,53 +4,21 @@
 
 <body>
 
-	<div id="command_container">
-		<div class="column-left">
-			<div class="left_msg_box overlay">
-				<h2>Player 1 update box</h2>
-				<input type="button" class="cmd_btn" value="Click to Go to the Next level!" data-step="player1-step1">
-				<br />
-				<input type="button" class="cmd_intro" value="Show intro" data-step="a" disabled="disabled">
-			</div>
-		</div>
-		<div class="column-center">	
-			<div class="overlay">
-				player1 runnning command:
-				<strong>{{player1_running_command}}</strong>
-				<hr/>
-				
-				{{#each main_stories}}
-				{{> main_story}}
-				{{/each}} 
-				<!-- {{main_stories}} -->
-			</div>
-		</div>
-		<div class="column-right">
-			<div class="right_msg_box overlay">
-				<h2>Player 2 update box</h2>
-				<span>Welcome to the fairy-tale app!</span>
-				<br />
-				Not Available yet
-				<br />
-				<input type="button" class="cmd_btn hidden" value="ok" data-step="player2-step2" disabled="disabled" >
-			</div>
-		</div>
-		<div class="clear_fix">
-		</div>
-	</div>
+	{{ >commandContainer }}
 	<div class="main-container">
-		<div class="main-container-left">{{> prince}}</div>
-		<div class="main-container-center">{{> scenesvg}}</div>
-		<div class="main-container-right"> {{> princess}}</div>
+		<div class="main-container-left">
+			<div class="bubble" data-order="bubble1"></div>
+			{{> prince}}
+		</div>
+		<div class="main-container-center">
+			<div class="bubble" data-order="bubble2"></div>
+			{{> scenesvg}}
+		</div>
+		<div class="main-container-right">
+			<div class="bubble" data-order="bubble3"></div>
+		 {{> princess}}</div>
 	</div>
 	{{> intro}}
 	{{player_action}}
 	
 </body>
-
-<template name="main_story">
-	<div>{{text}}</div>
-</template>
-<template name="command_container_template">
-	<div>{{text}}</div>
-</template>

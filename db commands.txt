@@ -1,0 +1,4 @@
+db.main_story.insert({ code: "just-started", command: "just-started", text: "Welcome to this experimental app. before clicking on next button, move your mouse on the objects of the scene.", createdAt: new Date() });
+db.main_story.insert({ code: "player1-step1", command: "show-intro", text: "Show intro to player1", createdAt: new Date() });
+db.main_story.insert({ code: "player1-step2", command: "show-princess", text: "Now Player 1 sees the princess that needs help to be rescued!!", createdAt: new Date() });
+db.main_story.insert({ code: "player1-step3", command: "show-prince", text: "Now Player 1 see the hero of the story", createdAt: new Date() });
