@@ -1,42 +1,45 @@
-<template name="intro">	
-	<div id="overlay-inAbox" class="overlay-intro hidden">
-		<div class="top-bar">
-			<span class="close">X close</span>
-		</div>
-		<div class="container">
-			<div class="controls">
-				<!-- <span class="first">First</span> | -->
-				<span class="prev">Prev</span> |
-				<span class="next">Next</span> <!-- |
-				<span class="end">End</span>  -->
-			</div>
-			<div class="sub-container">
-				<div class="slides active" data-page="0">
-					<p>
-						Once upon a time ...
-					</p>
-					<img src="/sleeping-beauty/once-upon-a-time.jpg" width="500">
+<template name="intro">
+	<div class="overlay-intro-container hidden">
+		<div class="overlay-intro-background"> </div>
+		<div class="container overlay-intro">	
+			<div class="row">
+				<div class="col-lg-2">
+					<button class="btn btn-danger close">X close</button>
 				</div>
-				<div class="slides hidden" data-page="1">
-					<p>
-						There was a princess in a cave needed to be rescued ...
-					</p>
-					<img src="/sleeping-beauty/castle.png" width="500">
-				</div>
-				<div class="slides hidden" data-page="2">
-					<p>
-						The prince charming had to fight with the dragon ...
-					</p>
-					<img src="/sleeping-beauty/dragon.gif" width="500">
-				</div>
-				<div class="slides hidden" data-page="3">
-					<p>
-						And he rescuded princess and finds the one that he truely loved!
-					</p>
-					<img src="/sleeping-beauty/princess-fantasy.jpg" width="300">
+				<div class="col-lg-4">
+					<button class="btn btn-default prev">Prev</button>
+					<button class="btn btn-success next">Next</button>
 				</div>
 			</div>
-		</div>
-		
+			<hr>
+			<div class="row">
+				<div class="sub-container">
+					<div class="slides active" data-page="0">
+						<p>
+							Once upon a time ...
+						</p>
+						<img src="/sleeping-beauty/once-upon-a-time.jpg" width="500">
+					</div>
+					<div class="slides hidden" data-page="1">
+						<p>
+							There was a princess in a cave needed to be rescued ...
+						</p>
+						<img src="/sleeping-beauty/castle.png" width="500">
+					</div>
+					<div class="slides hidden" data-page="2">
+						<p>
+							The prince charming had to fight with the dragon ...
+						</p>
+						<img src="/sleeping-beauty/dragon.gif" width="500">
+					</div>
+					<div class="slides hidden" data-page="3">
+						<p>
+							And he rescuded princess and finds the one that he truely loved!
+						</p>
+						<img src="/sleeping-beauty/princess-fantasy.jpg" width="300">
+					</div>
+				</div>  
+			</div>
+		</div>		
 	</div>
 </template>

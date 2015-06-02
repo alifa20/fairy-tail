@@ -1,36 +1,72 @@
 <template name="commandContainer">
 	<div id="command_container">
-		<div class="column-left">
-			<div class="left_msg_box overlay">
-				<h2>Player 1 update box</h2>
-				<input type="button" class="cmd_btn" value="Click to Go to the Next level!" data-step="player1-step1">
-				<br />
-				<input type="button" class="cmd_intro" value="Show intro" data-step="a" disabled="disabled">
-			</div>
+		<div class="container-fluid hidden">
+			<div class="row">
+				<div class="col-lg-4">
+
+					<h2>Player 1 update box</h2>
+					<input type="button" class="cmd_btn" value="Click to Go to the Next level!" data-step="player1-step1">
+					<br />
+					<input type="button" class="cmd_intro" value="Show intro" data-step="a" disabled="disabled">
+					
+				</div>
+				<div class="col-lg-4">
+					
+					<div class="overlay">
+						player1 runnning command:
+						<strong>{{player1_running_command}}</strong>
+						<hr/>
+
+						{{#each main_stories}}
+						<div>{{text}}</div>
+						{{/each}} 
+						<!-- {{main_stories}} -->
+					</div>
+					
+				</div>
+				<div class="col-lg-4">
+					<div class="right_msg_box overlay">
+						<h2>Player 2 update box</h2>
+						<span>Welcome to the fairy-tale app!</span>
+						<br />
+						Not Available yet
+						<br />
+						<input type="button" class="cmd_btn hidden" value="ok" data-step="player2-step2" disabled="disabled" >
+					</div>
+					
+				</div>
+			</div>	
 		</div>
-		<div class="column-center">	
-			<div class="overlay">
-				player1 runnning command:
-				<strong>{{player1_running_command}}</strong>
-				<hr/>
-				
-				{{#each main_stories}}
-				<div>{{text}}</div>
-				{{/each}} 
-				<!-- {{main_stories}} -->
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="bubble hidden" data-order="bubble1"></div>
+				<div class="arrow bubble1-arrow hidden" data-rel="bubble1"></div>
 			</div>
-		</div>
-		<div class="column-right">
-			<div class="right_msg_box overlay">
-				<h2>Player 2 update box</h2>
-				<span>Welcome to the fairy-tale app!</span>
-				<br />
-				Not Available yet
-				<br />
-				<input type="button" class="cmd_btn hidden" value="ok" data-step="player2-step2" disabled="disabled" >
+			<div class="col-lg-4">
+				<div class="bubble" data-order="bubble2">
+					<div class="bubble-content" >
+						{{#each main_stories}}
+							{{{text}}}
+						{{/each}} 
+						<p></p>
+						<div class="row">
+							<div class="col-lg-4 col-lg-offset-3">
+								<button class="bounce btn btn-default btn-primary bubble-commander" data-step="player1-step1">Click Me</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="arrow bubble2-arrow hidden" data-rel="bubble2"></div>
 			</div>
-		</div>
-		<div class="clear_fix">
+			<div class="col-lg-3 col-lg-offset-1">
+				<div class="bubble hidden" data-order="bubble3"></div>
+				<div class="arrow bubble3-arrow hidden" data-rel="bubble3"></div>
+			</div>
 		</div>
 	</div>
 </template>

@@ -1,0 +1,40 @@
+.overlay-intro-background{
+    width: 2000px;
+    height: 2000px;
+    opacity: 0.8;
+    position: absolute;
+    background: rgb(1, 4, 11);
+    z-index: 4;
+}
+.overlay-intro{
+    min-height: 500px;
+    background-color: #DACEBA;
+    border: 5px solid white;
+    z-index: 10;
+    position: absolute;  
+    left: 20%;
+    max-width: 700px;
+  /*
+    width: 700px;
+    top: 45px;
+    left: 170px;
+    display: none;*/
+}
+.container{
+    padding: 20px;
+}
+/*.top-bar{
+    border-bottom: 1px solid black;
+    padding: 5px;
+    cursor: pointer;
+    }*/
+    .controls{
+
+    }
+    .controls span{
+        cursor: pointer;
+    }
+    .sub-container{
+        padding-top: 10px;
+        margin: 0 auto;
+    }
